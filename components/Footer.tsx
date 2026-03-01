@@ -10,13 +10,13 @@ const SOCIAL_LINKS = [
 export function Footer() {
   return (
     <footer className="bg-[#F0EBE1] py-16 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-end max-w-7xl mx-auto">
-        {/* Left: Logo + Copyright */}
-        <div>
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-end text-center md:text-left max-w-7xl mx-auto gap-10 md:gap-0">
+        {/* Logo + Copyright + Contact - centered on mobile */}
+        <div className="flex flex-col items-center md:items-start">
           <img
             src="/images/logo.svg"
             alt="The Earth Atelier"
-            className="h-8 md:h-10 w-auto mb-10"
+            className="h-8 md:h-10 w-auto mb-6 md:mb-10"
           />
           <p className="text-brand-soil text-sm">© 2026. All rights reserved</p>
           <div className="mt-4 flex flex-col gap-1 text-brand-soil text-sm">
@@ -29,10 +29,10 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Right: Nav + Socials */}
-        <div className="flex flex-col items-start md:items-end">
+        {/* Nav + Socials - centered on mobile */}
+        <div className="flex flex-col items-center md:items-end">
           <nav
-            className="flex gap-4 md:gap-6 text-brand-soil text-sm font-medium mb-6 justify-start md:justify-end"
+            className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-brand-soil text-sm font-medium mb-6"
             aria-label="Footer navigation"
           >
             {NAV_LINKS.map((link) => (
@@ -45,7 +45,7 @@ export function Footer() {
               </Link>
             ))}
           </nav>
-          <div className="flex gap-4 md:gap-6 text-brand-soil text-sm justify-start md:justify-end">
+          <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-brand-soil text-sm">
             {SOCIAL_LINKS.map((link) => (
               <a
                 key={link.label}

@@ -17,9 +17,9 @@ export function Nav() {
     <>
       <nav className="w-full top-0 z-50 fixed bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Left: Logo - dark brown on transparent nav */}
-            <Link href="/" className="flex items-center">
+          <div className="flex items-center justify-between h-16 gap-4">
+            {/* Logo - centered on mobile, left on desktop */}
+            <Link href="/" className="flex items-center flex-1 md:flex-initial justify-center md:justify-start min-w-0">
               <img
                 src="/images/logo.svg"
                 alt="The Earth Atelier"
@@ -28,7 +28,7 @@ export function Nav() {
             </Link>
 
             {/* Center: Desktop links (hidden on mobile) - dark brown */}
-            <div className="hidden md:flex items-center gap-8 text-brand-soil font-medium text-sm">
+            <div className="hidden md:flex items-center gap-8 text-brand-soil font-medium text-sm flex-1 justify-center">
               {NAV_DESKTOP_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -44,8 +44,8 @@ export function Nav() {
               ))}
             </div>
 
-            {/* Right: Desktop CTA (hidden on mobile) + Mobile hamburger */}
-            <div className="flex items-center gap-3">
+            {/* Right: Desktop CTA (hidden on mobile) + Mobile hamburger - uncluttered */}
+            <div className="flex items-center justify-end flex-shrink-0 w-10 md:w-auto">
               <Link
                 href="/contact"
                 className="hidden md:inline-flex bg-[#F0EBE1] text-brand-soil px-5 py-2.5 text-sm font-medium hover:bg-[#E5DFD5] transition-colors rounded-md"
@@ -53,15 +53,15 @@ export function Nav() {
                 Book an appointment
               </Link>
 
-              {/* Hamburger - visible only on mobile */}
+              {/* Hamburger - visible only on mobile, clear tap target */}
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="md:hidden p-2 -mr-2 text-brand-soil hover:text-brand-soil/80 transition-colors"
+                className="md:hidden p-3 -mr-2 text-brand-soil hover:text-brand-soil/80 transition-colors touch-manipulation"
                 aria-label="Open menu"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             </div>

@@ -7,23 +7,23 @@ export default function CaseStudyPage() {
           Greenfield Startup Operating System Under Economic Risk
         </h1>
 
-        {/* The Overlapping Grid */}
+        {/* The Overlapping Grid - stacks on mobile to avoid overlap */}
         <div className="relative max-w-5xl mx-auto mt-8 mb-16 md:mb-32">
           {/* Main Image Placeholder */}
           <div className="w-full md:w-[80%] ml-auto aspect-video bg-brand-aluminium/20" />
 
-          {/* Context Box (Orange) */}
-          <div className="absolute top-12 left-0 w-[90%] md:w-96 bg-brand-ochre p-8 z-10">
+          {/* Context Box (Orange) - in flow on mobile, absolute on desktop */}
+          <div className="relative md:absolute md:top-12 md:left-0 mt-6 md:mt-0 w-full md:w-96 bg-brand-ochre p-6 md:p-8 z-10 rounded-lg">
             <h3 className="font-bold text-brand-soil mb-2">Context</h3>
-            <p className="text-brand-soil">
+            <p className="text-brand-soil text-sm md:text-base">
               A new process facility was commissioned to scale a pilot technology into full production as a major capacity expansion.
             </p>
           </div>
 
-          {/* Responsibility Box (Taupe) */}
-          <div className="absolute -bottom-16 right-0 md:-right-8 w-[90%] md:w-96 bg-[#A29F96] p-8 z-10 text-white">
+          {/* Responsibility Box (Taupe) - in flow on mobile, absolute on desktop */}
+          <div className="relative md:absolute md:-bottom-16 md:right-0 md:-right-8 mt-6 md:mt-0 w-full md:w-96 bg-[#A29F96] p-6 md:p-8 z-10 text-white rounded-lg">
             <h3 className="font-bold mb-2">Responsibility</h3>
-            <p className="mb-2">Process operations across:</p>
+            <p className="mb-2 text-sm md:text-base">Process operations across:</p>
             <ul className="list-disc pl-4 text-sm space-y-1">
               <li>Rail yard receiving and storage</li>
               <li>Raw material unloading</li>

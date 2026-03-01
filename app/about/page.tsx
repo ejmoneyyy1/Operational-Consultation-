@@ -86,33 +86,33 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-[#F3EBE3] p-8">
-              <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                <Image src={mapIcon} alt="" width={40} height={40} className="object-contain" />
+              <div className="w-12 h-12 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-aluminium/90 shrink-0">
+                <Image src={mapIcon} alt="" width={32} height={32} className="object-contain" />
               </div>
               <h3 className="font-bold text-brand-soil">Clarity before action</h3>
             </div>
             <div className="bg-[#F3EBE3] p-8">
-              <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                <Image src={mapIcon} alt="" width={40} height={40} className="object-contain" />
+              <div className="w-12 h-12 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-aluminium/90 shrink-0">
+                <Image src={mapIcon} alt="" width={32} height={32} className="object-contain" />
               </div>
               <h3 className="font-bold text-brand-soil">Structure under chaos</h3>
             </div>
             <div className="bg-[#F3EBE3] p-8">
-              <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                <Image src={layersIcon} alt="" width={40} height={40} className="object-contain" />
+              <div className="w-12 h-12 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-aluminium/90 shrink-0">
+                <Image src={layersIcon} alt="" width={32} height={32} className="object-contain brightness-0 invert" />
               </div>
               <h3 className="font-bold text-brand-soil">Execution with ownership</h3>
             </div>
             <div className="md:col-span-3 flex flex-col sm:flex-row justify-center gap-6">
               <div className="bg-[#F3EBE3] p-8 sm:min-w-[280px] sm:max-w-[320px]">
-                <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                  <Image src={layersIcon} alt="" width={40} height={40} className="object-contain" />
+                <div className="w-12 h-12 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-aluminium/90 shrink-0">
+                  <Image src={layersIcon} alt="" width={32} height={32} className="object-contain brightness-0 invert" />
                 </div>
                 <h3 className="font-bold text-brand-soil">Integration over silos</h3>
               </div>
               <div className="bg-[#F3EBE3] p-8 sm:min-w-[280px] sm:max-w-[320px]">
-                <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                  <Image src={gearIcon} alt="" width={40} height={40} className="object-contain" />
+                <div className="w-12 h-12 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-aluminium/90 shrink-0">
+                  <Image src={gearIcon} alt="" width={32} height={32} className="object-contain" />
                 </div>
                 <h3 className="font-bold text-brand-soil">High-competence leadership</h3>
               </div>

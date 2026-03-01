@@ -48,10 +48,21 @@ export default function HomePage() {
               See What I Do
             </Link>
           </div>
+
+          {/* Mobile only: 10+ block in flow so it doesn't overlap */}
+          <div className="mt-10 md:hidden w-full max-w-[520px] bg-[#F0EBE1]/95 p-6 shadow-lg rounded-lg flex flex-row items-start gap-4">
+            <div className="flex flex-col leading-none shrink-0">
+              <span className="text-5xl font-bold text-brand-soil">10+</span>
+              <span className="text-xl font-bold text-brand-soil">years</span>
+            </div>
+            <p className="text-sm text-brand-soil font-medium leading-snug pt-1">
+              across manufacturing, logistics, supply chain, and multi-stakeholder execution.
+            </p>
+          </div>
         </div>
 
-        {/* Experience block - horizontal layout: "10+ years" left, description right */}
-        <div className="absolute right-4 sm:right-6 lg:right-8 bottom-6 lg:bottom-8 z-20 bg-[#F0EBE1]/95 p-6 md:p-8 shadow-lg rounded-lg flex flex-row items-start gap-6 max-w-[520px]">
+        {/* Desktop only: Experience block absolute bottom-right */}
+        <div className="hidden md:flex absolute right-4 sm:right-6 lg:right-8 bottom-6 lg:bottom-8 z-20 bg-[#F0EBE1]/95 p-6 md:p-8 shadow-lg rounded-lg items-start gap-6 max-w-[520px]">
           <div className="flex flex-col leading-none shrink-0">
             <span className="text-6xl md:text-7xl font-bold text-brand-soil">10+</span>
             <span className="text-2xl md:text-3xl font-bold text-brand-soil">years</span>
@@ -76,12 +87,12 @@ export default function HomePage() {
         </header>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="bg-brand-linen p-8">
-            <div className="mb-4">
+            <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-brand-aluminium/90 shrink-0">
               <Image
                 src={mapIcon}
                 alt=""
-                width={56}
-                height={56}
+                width={40}
+                height={40}
                 className="object-contain"
               />
             </div>
@@ -93,7 +104,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="bg-brand-linen p-8">
-            <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-brand-aluminium">
+            <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-brand-aluminium/90 shrink-0">
               <Image
                 src={layersIcon}
                 alt=""
@@ -110,12 +121,12 @@ export default function HomePage() {
             </p>
           </div>
           <div className="bg-brand-linen p-8">
-            <div className="mb-4">
+            <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-brand-aluminium/90 shrink-0">
               <Image
                 src={gearIcon}
                 alt=""
-                width={56}
-                height={56}
+                width={40}
+                height={40}
                 className="object-contain"
               />
             </div>
@@ -205,33 +216,33 @@ export default function HomePage() {
           </p>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <div>
+          <div className="min-w-0">
             <div className="aspect-square bg-brand-stainless/30 flex items-center justify-center">
               <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
                 [ Image Placeholder ]
               </span>
             </div>
-            <h3 className="mt-6 text-lg font-bold text-brand-soil">
+            <h3 className="mt-6 text-lg font-bold text-brand-soil break-words">
               Network Contingency and Control Tower Operating System for ERP Blackout
             </h3>
           </div>
-          <div>
+          <div className="min-w-0">
             <div className="aspect-square bg-brand-stainless/30 flex items-center justify-center">
               <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
                 [ Image Placeholder ]
               </span>
             </div>
-            <h3 className="mt-6 text-lg font-bold text-brand-soil">
+            <h3 className="mt-6 text-lg font-bold text-brand-soil break-words">
               Packaging and Material Flow Transformation to Enable Capacity Expansion
             </h3>
           </div>
-          <div>
+          <div className="min-w-0">
             <div className="aspect-square bg-brand-stainless/30 flex items-center justify-center">
               <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
                 [ Image Placeholder ]
               </span>
             </div>
-            <h3 className="mt-6 text-lg font-bold text-brand-soil">
+            <h3 className="mt-6 text-lg font-bold text-brand-soil break-words">
               DTC Fulfillment Consolidation into a Single Governed Operating System
             </h3>
           </div>
