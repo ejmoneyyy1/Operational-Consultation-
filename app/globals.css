@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    @apply border-border-color;
+  }
+
+  body {
+    @apply bg-brand-linen text-brand-soil antialiased text-sm leading-relaxed;
+    font-family: var(--font-inter);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .layout-grid {
+    @apply grid grid-cols-1 md:grid-cols-12 gap-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Minimal transitions - only purposeful micro-interactions */
+.transition-minimal {
+  transition: all 0.2s ease;
+}
+
+/* Architectural spacing utilities */
+.section-padding {
+  @apply py-24 px-4 sm:px-6 lg:px-8;
+}
+
+.container-architectural {
+  @apply mx-auto max-w-7xl;
+}
+
+/* Technical linework utility */
+.technical-line {
+  @apply border-t border-neutral-200;
+}

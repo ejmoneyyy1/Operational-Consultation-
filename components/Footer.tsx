@@ -1,0 +1,57 @@
+import Link from 'next/link';
+import { NAV_LINKS } from '@/lib/constants';
+
+const SOCIAL_LINKS = [
+  { label: 'Instagram', href: 'https://instagram.com' },
+  { label: 'X', href: 'https://x.com' },
+  { label: 'Tiktok', href: 'https://tiktok.com' },
+] as const;
+
+export function Footer() {
+  return (
+    <footer className="bg-[#F0EBE1] py-16 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col md:flex-row justify-between items-end max-w-7xl mx-auto">
+        {/* Left: Logo + Copyright */}
+        <div>
+          <img
+            src="/images/logo.svg"
+            alt="The Earth Atelier"
+            className="h-8 md:h-10 w-auto mb-10"
+          />
+          <p className="text-brand-soil text-sm">© 2026. All rights reserved</p>
+        </div>
+
+        {/* Right: Nav + Socials */}
+        <div className="flex flex-col items-start md:items-end">
+          <nav
+            className="flex gap-4 md:gap-6 text-brand-soil text-sm font-medium mb-6 justify-start md:justify-end"
+            aria-label="Footer navigation"
+          >
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:text-brand-soil/80 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="flex gap-4 md:gap-6 text-brand-soil text-sm justify-start md:justify-end">
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-soil/80 transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
