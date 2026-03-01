@@ -9,9 +9,9 @@ export default function ServicesPage() {
   return (
     <>
       {/* TASK 1: Page Header */}
-      <section className="pt-40 pb-20">
+      <section className="pt-24 pb-12 md:pt-40 md:pb-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-brand-wood mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-brand-wood mb-6">
             Services
           </h1>
           <p className="text-xl text-brand-soil leading-relaxed">
@@ -23,7 +23,7 @@ export default function ServicesPage() {
       {/* TASK 2: Service Blocks */}
 
       {/* Block 1: Operational Diagnostic Sprint */}
-      <section className="relative w-full min-h-[700px] flex items-center py-24">
+      <section className="relative w-full min-h-[400px] md:min-h-[700px] flex items-center py-16 md:py-24">
         <div className="absolute inset-0">
           <Image
             src={service1Img}
@@ -34,7 +34,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-start">
           <div className="bg-[#F0EBE1] p-10 md:p-14 max-w-2xl w-full rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-brand-wood mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-4">
               Operational Diagnostic Sprint
             </h2>
             <p className="text-brand-soil/80 mb-8 leading-relaxed">
@@ -58,7 +58,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Block 2: Operational Integration & Execution */}
-      <section className="relative w-full min-h-[700px] flex items-center py-24">
+      <section className="relative w-full min-h-[400px] md:min-h-[700px] flex items-center py-16 md:py-24">
         <div className="absolute inset-0">
           <Image
             src={service2Img}
@@ -69,7 +69,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-end">
           <div className="bg-[#F0EBE1] p-10 md:p-14 max-w-2xl w-full rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-brand-wood mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-4">
               Operational Integration & Execution
             </h2>
             <p className="text-brand-soil/80 mb-8 leading-relaxed">
@@ -92,7 +92,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Block 3: Special Operations (Complex Work) */}
-      <section className="relative w-full min-h-[700px] flex items-center py-24">
+      <section className="relative w-full min-h-[400px] md:min-h-[700px] flex items-center py-16 md:py-24">
         <div className="absolute inset-0">
           <Image
             src={service3Img}
@@ -103,7 +103,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-start">
           <div className="bg-[#F0EBE1] p-10 md:p-14 max-w-2xl w-full rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-brand-wood mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-4">
               Special Operations (Complex Work)
             </h2>
             <p className="text-brand-soil/80 mb-8 leading-relaxed">
@@ -126,7 +126,7 @@ export default function ServicesPage() {
       </section>
 
       {/* TASK 3: Final CTA Banner */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-16 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={ctaBgImage}
@@ -137,7 +137,7 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-white/70" aria-hidden />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-soil mb-6 text-balance">
+          <h2 className="text-3xl md:text-5xl font-bold text-brand-soil mb-6 text-balance">
             Let&apos;s bring clarity to your complex operation.
           </h2>
           <p className="text-lg text-brand-soil/80 mb-10">

@@ -2,13 +2,13 @@ export default function CaseStudyPage() {
   return (
     <>
       {/* TASK 1: Hero & Overlapping Context Area */}
-      <div className="pt-40 pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-brand-soil mb-16 max-w-4xl">
+      <div className="pt-24 pb-12 md:pt-40 md:pb-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl md:text-5xl font-bold text-brand-soil mb-10 md:mb-16 max-w-4xl">
           Greenfield Startup Operating System Under Economic Risk
         </h1>
 
         {/* The Overlapping Grid */}
-        <div className="relative max-w-5xl mx-auto mt-8 mb-32">
+        <div className="relative max-w-5xl mx-auto mt-8 mb-16 md:mb-32">
           {/* Main Image Placeholder */}
           <div className="w-full md:w-[80%] ml-auto aspect-video bg-brand-aluminium/20" />
 
@@ -36,7 +36,7 @@ export default function CaseStudyPage() {
       </div>
 
       {/* TASK 2: Operation Represented & Ambiguity Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 md:mb-24">
         {/* Row 1 */}
         <div className="grid md:grid-cols-2 gap-16 mb-16">
           <div>
@@ -94,7 +94,7 @@ export default function CaseStudyPage() {
       </div>
 
       {/* TASK 4: Three Image Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 md:mb-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="aspect-square bg-brand-aluminium/20 w-full" />
           <div className="aspect-square bg-brand-aluminium/20 w-full" />
@@ -103,7 +103,7 @@ export default function CaseStudyPage() {
       </div>
 
       {/* TASK 5: Outcomes & Impact */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-32 space-y-10">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-32 space-y-10">
         <div className="text-brand-soil/80 leading-relaxed text-sm md:text-base">
           <span className="font-bold text-brand-soil mb-2 block text-base">Outcomes</span>
           Process operations stabilized under real production conditions. Process operations reached steady run performance within approximately twelve weeks of commissioning. Operations assumed full ownership within roughly one week after wet commissioning completed. Approximately forty-five operators were fully qualified across four departments, supported by team and technical leads. Zero safety recordables occurred during commissioning and startup. Economic risk was absorbed without disruption.

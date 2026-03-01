@@ -12,58 +12,59 @@ import gearIcon from '@/public/images/gearicon.png';
 export default function HomePage() {
   return (
     <>
-    <section className="min-h-[80vh] pt-28 pb-16 md:pt-32 md:pb-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left Column - Content */}
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-balance text-brand-soil">
-              Operational <span className="text-brand-ochre">Clarity</span> Architect for Complex Operations
-            </h1>
-            <p className="text-lg text-brand-soil">
-              Diagnosing, structuring, and executing complex operations.
-            </p>
-            <p className="text-sm text-brand-soil/80">
-              15+ years across manufacturing, logistics, supply chain & construction.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-wood hover:bg-brand-soil transition-colors"
-              >
-                Schedule a Clarity Call
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-brand-soil border border-brand-soil/30 hover:border-brand-soil/50 transition-colors"
-              >
-                See What I Do
-              </Link>
-            </div>
-          </div>
+    <section className="relative min-h-[400px] md:min-h-[85vh] flex items-center pt-20 pb-12 md:pt-28 md:pb-24">
+      {/* Full-bleed background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={heroImage}
+          alt="Industrial operations and complex systems"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-[#F5F2EC]/55" aria-hidden />
+      </div>
 
-          {/* Right Column - Hero Image */}
-          <div className="relative aspect-[4/3] w-full overflow-hidden border border-brand-aluminium/20">
-            <Image
-              src={heroImage}
-              alt="Industrial operations and complex systems"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute bottom-6 left-6 z-20 bg-brand-linen/90 backdrop-blur-sm p-6 border-l-4 border-brand-wood max-w-[240px] shadow-lg">
-              <div className="text-4xl font-bold text-brand-soil mb-1">10+</div>
-              <div className="text-sm font-medium text-brand-soil leading-tight">
-                years across manufacturing, logistics, supply chain & construction.
-              </div>
-            </div>
+      {/* Content overlay - dark brown text per Figma */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-balance text-brand-soil">
+            Operational <span className="text-brand-ochre">Clarity</span> Architect for Complex Operations
+          </h1>
+          <p className="mt-6 text-lg text-brand-soil/85">
+            I diagnose, structure, and execute complex operations where ownership, clarity, and flow break.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-aluminium hover:bg-brand-aluminium/90 transition-colors rounded-md"
+            >
+              Schedule a Clarity Call
+            </Link>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-ochre hover:bg-brand-ochre/90 transition-colors rounded-md"
+            >
+              See What I Do
+            </Link>
           </div>
+        </div>
+
+        {/* Experience block - horizontal layout: "10+ years" left, description right */}
+        <div className="absolute right-4 sm:right-6 lg:right-8 bottom-6 lg:bottom-8 z-20 bg-[#F0EBE1]/95 p-6 md:p-8 shadow-lg rounded-lg flex flex-row items-start gap-6 max-w-[520px]">
+          <div className="flex flex-col leading-none shrink-0">
+            <span className="text-6xl md:text-7xl font-bold text-brand-soil">10+</span>
+            <span className="text-2xl md:text-3xl font-bold text-brand-soil">years</span>
+          </div>
+          <p className="text-base md:text-lg text-brand-soil font-medium leading-snug pt-1">
+            across manufacturing, logistics, supply chain, and multi-stakeholder execution.
+          </p>
         </div>
       </div>
     </section>
 
     {/* Value Proposition */}
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-wood">
@@ -92,13 +93,13 @@ export default function HomePage() {
             </p>
           </div>
           <div className="bg-brand-linen p-8">
-            <div className="mb-4">
+            <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-brand-aluminium">
               <Image
                 src={layersIcon}
                 alt=""
-                width={56}
-                height={56}
-                className="object-contain"
+                width={40}
+                height={40}
+                className="object-contain brightness-0 invert"
               />
             </div>
             <h3 className="text-xl font-bold text-brand-soil mb-3">
@@ -130,7 +131,7 @@ export default function HomePage() {
     </section>
 
     {/* Problem I solve */}
-    <section className="py-24 bg-[#F0EBE1]">
+    <section className="py-16 md:py-24 bg-[#F0EBE1]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-soil">
@@ -193,7 +194,7 @@ export default function HomePage() {
     </section>
 
     {/* Case studies */}
-    <section className="py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-soil mb-6">
@@ -247,7 +248,7 @@ export default function HomePage() {
     </section>
 
     {/* The Forming Framework */}
-    <section className="py-24 bg-brand-linen">
+    <section className="py-16 md:py-24 bg-brand-linen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-soil mb-16">
@@ -298,7 +299,7 @@ export default function HomePage() {
     </section>
 
     {/* Final CTA */}
-    <section className="py-32 relative overflow-hidden">
+    <section className="py-16 md:py-32 relative overflow-hidden">
       {/* The Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -313,7 +314,7 @@ export default function HomePage() {
 
       {/* The Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-brand-soil mb-8 text-balance">
+        <h2 className="text-3xl md:text-5xl font-bold text-brand-soil mb-8 text-balance">
           Let&apos;s bring clarity to your complex operation.
         </h2>
         <button className="bg-brand-soil text-white font-semibold px-8 py-4 hover:bg-brand-soil/90 transition-minimal">

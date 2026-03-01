@@ -11,11 +11,11 @@ export default function AboutPage() {
   return (
     <>
       {/* TASK 1: Identity Statement Section */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-24 pb-12 md:pt-32 md:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <h1 className="text-4xl font-bold text-brand-soil">
+              <h1 className="text-3xl md:text-4xl font-bold text-brand-soil">
                 Identity Statement
               </h1>
             </div>
@@ -37,12 +37,12 @@ export default function AboutPage() {
       </section>
 
       {/* TASK 2: Founder Narrative & Brand Thesis */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
         <div className="rounded-2xl overflow-hidden flex flex-col">
           {/* Block 1: Founder Narrative */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
             <div className="h-full bg-[#F0EBE1] p-12 md:p-16 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold text-brand-wood mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-6">
                 Founder Narrative
               </h2>
               <p className="text-brand-soil/80 leading-relaxed">
@@ -67,7 +67,7 @@ export default function AboutPage() {
               />
             </div>
             <div className="h-full bg-[#F0EBE1] p-12 md:p-16 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold text-brand-wood mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-6">
                 Brand Thesis
               </h2>
               <p className="text-brand-soil/80 leading-relaxed">
@@ -79,48 +79,50 @@ export default function AboutPage() {
       </section>
 
       {/* TASK 3: Operating Principles */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-brand-wood mb-16 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-12 md:mb-16 text-center">
             Operating Principles
           </h2>
-          <div className="flex justify-center flex-wrap gap-6">
-            <div className="bg-[#F3EBE3] p-8 w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-[#F3EBE3] p-8">
               <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
                 <Image src={mapIcon} alt="" width={40} height={40} className="object-contain" />
               </div>
               <h3 className="font-bold text-brand-soil">Clarity before action</h3>
             </div>
-            <div className="bg-[#F3EBE3] p-8 w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]">
+            <div className="bg-[#F3EBE3] p-8">
               <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
                 <Image src={mapIcon} alt="" width={40} height={40} className="object-contain" />
               </div>
               <h3 className="font-bold text-brand-soil">Structure under chaos</h3>
             </div>
-            <div className="bg-[#F3EBE3] p-8 w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]">
+            <div className="bg-[#F3EBE3] p-8">
               <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
                 <Image src={layersIcon} alt="" width={40} height={40} className="object-contain" />
               </div>
               <h3 className="font-bold text-brand-soil">Execution with ownership</h3>
             </div>
-            <div className="bg-[#F3EBE3] p-8 w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]">
-              <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                <Image src={layersIcon} alt="" width={40} height={40} className="object-contain" />
+            <div className="md:col-span-3 flex flex-col sm:flex-row justify-center gap-6">
+              <div className="bg-[#F3EBE3] p-8 sm:min-w-[280px] sm:max-w-[320px]">
+                <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
+                  <Image src={layersIcon} alt="" width={40} height={40} className="object-contain" />
+                </div>
+                <h3 className="font-bold text-brand-soil">Integration over silos</h3>
               </div>
-              <h3 className="font-bold text-brand-soil">Integration over silos</h3>
-            </div>
-            <div className="bg-[#F3EBE3] p-8 w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)]">
-              <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
-                <Image src={gearIcon} alt="" width={40} height={40} className="object-contain" />
+              <div className="bg-[#F3EBE3] p-8 sm:min-w-[280px] sm:max-w-[320px]">
+                <div className="w-10 h-10 rounded-full overflow-hidden mb-4 flex items-center justify-center bg-brand-clay/20">
+                  <Image src={gearIcon} alt="" width={40} height={40} className="object-contain" />
+                </div>
+                <h3 className="font-bold text-brand-soil">High-competence leadership</h3>
               </div>
-              <h3 className="font-bold text-brand-soil">High-competence leadership</h3>
             </div>
           </div>
         </div>
       </section>
 
       {/* TASK 4: Final CTA Banner */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-16 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={ctaBgImage}
@@ -131,7 +133,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-white/70" aria-hidden />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-soil mb-8 text-balance">
+          <h2 className="text-3xl md:text-5xl font-bold text-brand-soil mb-8 text-balance">
             Let&apos;s bring clarity to your complex operation.
           </h2>
           <Link
