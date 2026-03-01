@@ -7,12 +7,17 @@
     --font-inter: 'Inter', system-ui, sans-serif;
   }
 
+  /* Larger base font so all text across the site is bigger */
+  html {
+    font-size: 20px;
+  }
+
   * {
     @apply border-border-color;
   }
 
   body {
-    @apply bg-brand-linen text-brand-soil antialiased text-sm leading-relaxed;
+    @apply bg-brand-linen text-brand-soil antialiased text-base leading-relaxed;
     font-family: var(--font-inter);
   }
 

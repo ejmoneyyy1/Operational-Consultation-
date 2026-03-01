@@ -19,6 +19,14 @@ export function Footer() {
             className="h-8 md:h-10 w-auto mb-10"
           />
           <p className="text-brand-soil text-sm">© 2026. All rights reserved</p>
+          <div className="mt-4 flex flex-col gap-1 text-brand-soil text-sm">
+            <a href="mailto:edwinalobuia@gmail.com" className="hover:text-brand-soil/80 transition-colors">
+              edwinalobuia@gmail.com
+            </a>
+            <a href="tel:+233539652694" className="hover:text-brand-soil/80 transition-colors">
+              +233 539652694
+            </a>
+          </div>
         </div>
 
         {/* Right: Nav + Socials */}

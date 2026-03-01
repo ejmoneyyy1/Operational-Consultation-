@@ -4,7 +4,6 @@ import './globals.css';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { ArchitecturalGrid } from '@/components/ArchitecturalGrid';
-import { PrecisionCursor } from '@/components/PrecisionCursor';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -14,8 +13,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Edwin - Operational Clarity Architect',
-  description: 'Diagnosing, structuring, and executing complex operations.',
+  title: {
+    template: '%s | The Earth Atelier',
+    default: 'The Earth Atelier | Operational Clarity Architect',
+  },
+  description: 'I diagnose, structure, and execute complex operations where ownership, clarity, and flow break down. Specializing in manufacturing, logistics, supply chain, and construction.',
+  keywords: ['operational clarity', 'systems thinking', 'manufacturing consultant', 'supply chain logistics', 'operational execution'],
+  openGraph: {
+    title: 'The Earth Atelier | Operational Clarity Architect',
+    description: 'I help organizations bring clarity, structure, and execution into complex operational systems.',
+    url: 'https://your-vercel-domain.vercel.app', // Update this once deployed
+    siteName: 'The Earth Atelier',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Earth Atelier',
+    description: 'Diagnose the real system. Structure the path forward. Execute until stable.',
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +43,6 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body>
         <ArchitecturalGrid />
-        <PrecisionCursor />
         <Nav />
         <main className="min-h-screen">
           {children}
