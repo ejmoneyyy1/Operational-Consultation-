@@ -55,7 +55,8 @@ export default function AboutPage() {
                 src={founderImg}
                 alt="Edwin Alobuia"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
+                style={{ objectPosition: 'center top' }}
               />
             </div>
           </div>
