@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import { NAV_LINKS } from '@/lib/constants';
 
-const SOCIAL_LINKS = [
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'X', href: 'https://x.com' },
-  { label: 'Tiktok', href: 'https://tiktok.com' },
-] as const;
+const SOCIAL_LINKS = [{ label: 'LinkedIn', href: '#' }] as const;
 
 export function Footer() {
   return (

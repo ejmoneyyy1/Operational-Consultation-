@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import identityBgImage from '@/public/images/identity-bg.png';
 import thesisSculptureImage from '@/public/images/thesis-sculpture.png';
+import founderImg from '@/public/images/founder.png';
 import ctaBgImage from '@/public/images/cta-bg.jpg.jpg';
 import mapIcon from '@/public/images/mapicon.png';
 import layersIcon from '@/public/images/layersicon.png';
@@ -16,7 +17,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
               <h1 className="text-3xl md:text-4xl font-bold text-brand-soil">
-                Identity Statement
+                Clarity.
               </h1>
             </div>
             <div className="md:col-span-8">
@@ -43,16 +44,19 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
             <div className="h-full bg-[#F0EBE1] p-12 md:p-16 flex flex-col justify-center">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-6">
-                Founder Narrative
+                Impact.
               </h2>
               <p className="text-brand-soil/80 leading-relaxed">
                 My work sits at the intersection of operations, systems thinking, and execution. I&apos;ve worked across manufacturing, logistics, supply chain, and construction, stepping into environments where no one owns the middle: diagnosing what&apos;s broken, restructuring workflows, and leading execution until the system works.
               </p>
             </div>
-            <div className="h-full bg-brand-aluminium/20 relative min-h-[400px] md:min-h-full flex items-center justify-center">
-              <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
-                [ Founder Image Placeholder ]
-              </span>
+            <div className="h-full relative min-h-[400px] md:min-h-full overflow-hidden">
+              <Image
+                src={founderImg}
+                alt="Edwin Alobuia"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 
@@ -68,7 +72,7 @@ export default function AboutPage() {
             </div>
             <div className="h-full bg-[#F0EBE1] p-12 md:p-16 flex flex-col justify-center">
               <h2 className="text-2xl md:text-3xl font-bold text-brand-wood mb-6">
-                Brand Thesis
+                Approach.
               </h2>
               <p className="text-brand-soil/80 leading-relaxed">
                 Operational clarity is not delivered; it is formed. It emerges from diagnosing what&apos;s real, shaping the right structure, and executing with intention. My consulting practice and my artistic practice share the same foundation: turning raw material into intentional structure. Whether it&apos;s clay or a cross-functional operation, the work is to form the unformed.
