@@ -19,9 +19,6 @@ export function Footer() {
             <a href="mailto:edwinalobuia@gmail.com" className="hover:text-brand-soil/80 transition-colors">
               edwinalobuia@gmail.com
             </a>
-            <a href="tel:+233539652694" className="hover:text-brand-soil/80 transition-colors">
-              +233 539652694
-            </a>
           </div>
         </div>
 
