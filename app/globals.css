@@ -7,9 +7,8 @@
     --font-inter: 'Inter', system-ui, sans-serif;
   }
 
-  /* Larger base font so all text across the site is bigger */
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   * {

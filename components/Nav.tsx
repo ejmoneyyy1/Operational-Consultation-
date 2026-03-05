@@ -15,7 +15,7 @@ export function Nav() {
 
   return (
     <>
-      <nav className="w-full top-0 z-50 fixed bg-transparent">
+      <nav className="w-full top-0 z-50 fixed bg-[#F4F2EC]/95 backdrop-blur-sm border-b border-brand-aluminium/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 gap-4">
             {/* Logo - centered on mobile, left on desktop */}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { NAV_LINKS } from '@/lib/constants';
 
-const SOCIAL_LINKS = [{ label: 'LinkedIn', href: '#' }] as const;
+const SOCIAL_LINKS = [{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/ed-alobuia/' }] as const;
 
 export function Footer() {
   return (
@@ -16,8 +16,8 @@ export function Footer() {
           />
           <p className="text-brand-soil text-sm">© 2026. All rights reserved</p>
           <div className="mt-4 flex flex-col gap-1 text-brand-soil text-sm">
-            <a href="mailto:edwinalobuia@gmail.com" className="hover:text-brand-soil/80 transition-colors">
-              edwinalobuia@gmail.com
+            <a href="mailto:ealobuia@theearthatelier.com" className="hover:text-brand-soil/80 transition-colors">
+              ealobuia@theearthatelier.com
             </a>
           </div>
         </div>
