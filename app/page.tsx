@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { caseStudies } from '@/data/case-studies';
 import heroImage from '@/public/images/Rectangle 1.jpg';
 import strategyGapImage from '@/public/images/Rectangle 22.jpg';
 import ownershipVoidImage from '@/public/images/Rectangle 22-2.jpg';
@@ -204,54 +205,25 @@ export default function HomePage() {
       </div>
     </section>
 
-    {/* Case studies */}
-    <section className="py-16 md:py-24 bg-white">
+    {/* Case Studies Section */}
+    <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-soil mb-6">
-            Case studies
-          </h2>
-          <p className="max-w-3xl mx-auto text-brand-soil text-base leading-relaxed">
-            I have brought structural clarity to over 10+ years of complex operations where multi-stakeholder alignment was critical.
-          </p>
-        </header>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <div className="min-w-0">
-            <div className="aspect-square bg-brand-stainless/30 flex items-center justify-center">
-              <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
-                [ Image Placeholder ]
-              </span>
-            </div>
-            <h3 className="mt-6 text-lg font-bold text-brand-soil break-words">
-              Network Contingency and Control Tower Operating System for ERP Blackout
-            </h3>
-          </div>
-          <div className="min-w-0">
-            <div className="aspect-square bg-brand-stainless/30 flex items-center justify-center">
-              <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
-                [ Image Placeholder ]
-              </span>
-            </div>
-            <h3 className="mt-6 text-lg font-bold text-brand-soil break-words">
-              Packaging and Material Flow Transformation to Enable Capacity Expansion
-            </h3>
-          </div>
-          <div className="min-w-0">
-            <div className="aspect-square bg-brand-stainless/30 flex items-center justify-center">
-              <span className="text-xs font-mono text-brand-aluminium tracking-wider uppercase">
-                [ Image Placeholder ]
-              </span>
-            </div>
-            <h3 className="mt-6 text-lg font-bold text-brand-soil break-words">
-              DTC Fulfillment Consolidation into a Single Governed Operating System
-            </h3>
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-brand-wood mb-4">Case studies</h2>
+          <p className="text-brand-soil/80">I have brought structural clarity to over 10+ years of complex operations where multi-stakeholder alignment was critical.</p>
         </div>
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/case-studies"
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-brand-soil hover:opacity-90 transition-opacity"
-          >
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {caseStudies.slice(0, 3).map((study) => (
+            <Link key={study.slug} href={`/case-studies/${study.slug}`} className="group block">
+              <div className="aspect-[4/3] bg-brand-aluminium/20 rounded-sm mb-6"></div>
+              <h3 className="font-bold text-brand-soil mb-2 group-hover:text-brand-wood transition-colors">{study.title}</h3>
+            </Link>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Link href="/case-studies" className="inline-block bg-brand-soil text-white px-8 py-3 rounded-sm hover:bg-brand-wood transition-colors font-medium">
             See More
           </Link>
         </div>
