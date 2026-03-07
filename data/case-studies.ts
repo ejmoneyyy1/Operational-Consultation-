@@ -25,6 +25,12 @@ export const caseStudies = [
     slug: "packaging-material-flow",
     category: "Growth & Infrastructure Expansion",
     title: "Packaging and Material Flow Transformation to Enable Capacity Expansion",
+    responsibility: [
+      "Tote and rack path design",
+      "Material flow and storage layout",
+      "Cutover sequencing and volume ramp",
+      "End-to-end flow and capital alignment"
+    ],
     context: "A high-capacity line was being added to an existing manufacturing plant to support growth. The new line represented a major increase in annual output. However, the surrounding material handling systems, storage layouts, and bulk flow infrastructure were not designed for the new throughput.",
     operationRepresented: "There was a real risk that the line would commission successfully while the facility failed to absorb the volume. The objective was to install and ensure capacity without introducing new constraints, and to achieve stability.",
     ambiguity: "Key unknowns were not obvious. Key unknowns included: where true bottlenecks would emerge once the line was fully loaded, how upstream and downstream systems would respond under load, whether reliability could be sustained under demand, and how to redirect physical flow without disrupting existing operations. At one point, a shift could have failed elsewhere in the network.",
@@ -38,6 +44,12 @@ export const caseStudies = [
     slug: "dtc-fulfillment-consolidation",
     category: "Growth & Infrastructure Expansion",
     title: "DTC Fulfillment Consolidation Into a Single Governed Operating System",
+    responsibility: [
+      "Interim SLA design and transition viability",
+      "Flow design and manual inventory mapping",
+      "Phased volume migration and live monitoring",
+      "Cross-functional alignment and bottleneck resolution"
+    ],
     context: "The direct-to-consumer fulfillment network was fragmented across multiple third-party logistics providers and sites. The model created rising costs, inconsistent service performance, technology complexity, legacy ERP platform exposure, and regulatory exposure for certain SKUs. Reliability declined while overhead continued to increase.",
     operationRepresented: "The objective was not simply to execute a new fulfillment model, but to do it without disrupting customer service. The enterprise needed the target state to still be built.",
     ambiguity: "Target-state architecture had already been defined. Key unknowns included: how to run and structure interim SLAs, retire main ERP, order management moving outside automation during blackout, and whether staffing could be handled fully at scale. There was a gap between current and target state that had to be closed.",
@@ -53,6 +65,12 @@ export const caseStudies = [
     slug: "network-contingency-erp-blackout",
     category: "Crisis Management & Network Resilience",
     title: "Network Contingency and Control Tower Operating System for ERP Blackout",
+    responsibility: [
+      "Phased model and control tower design",
+      "Pre-positioning controls and alternate paths",
+      "Node trace mechanisms and daily treatment",
+      "Downstream rebalancing and intervention deployment"
+    ],
     context: "Peak Q4 demand placed extreme pressure across manufacturing, distribution centers, and transportation capacity. At the same time, the enterprise planned a massive migration to a new platform, removing normal execution visibility.",
     operationRepresented: "Supply chain faced three simultaneous realities: surge volume during the most critical season, offline infrastructure, and the need for a clean restart once it went live. The objective was not to survive an outage, but to protect end-to-end flow while maintaining data integrity.",
     ambiguity: "The primary execution backbone was offline. Governance had to run without normal visibility. Key unknowns included: how much volume could responsibly be pulled forward, where constraints would break under pressure, and how to serve customers unwilling to accept the blackout. Risk could compound into failure if not governed.",
@@ -66,6 +84,12 @@ export const caseStudies = [
     slug: "zero-disruption-3pl-transition",
     category: "Crisis Management & Network Resilience",
     title: "Zero-Disruption 3PL Transition at Scale",
+    responsibility: [
+      "Transition scenario design and timeline curves",
+      "Failure mode mapping across operations, labor, and IT",
+      "Cutover sequencing and wall-to-wall inventory reconciliation",
+      "Cross-functional alignment and new provider onboarding"
+    ],
     context: "Following sustained stabilization and performance governance at a high-throughput distribution center supporting two business units, the incumbent third-party logistics provider was determined to be structurally misaligned for long-term operational requirements.",
     operationRepresented: "The site operated under high daily inbound and outbound truck volumes, significant seasonal demand variability, tight service-level expectations across multiple customers, and direct coupling to manufacturing flow. The transition window coincided with peak volume.",
     ambiguity: "The objective was not simply to change providers, but to replace the system without disrupting the network. Exit itself had to be governed. Key unknowns: whether service could be maintained during a live cutover, where capacity constraints would emerge, and how to manage a new workforce ramp under real demand. The transition was more complex than average; there was no historical playbook for a move of this scale.",
@@ -81,6 +105,12 @@ export const caseStudies = [
     slug: "operational-stabilization-distribution-hub",
     category: "Operational Excellence & Control Systems",
     title: "Operational Stabilization of a Multi-Business-Unit Distribution Hub",
+    responsibility: [
+      "Baseline establishment and control loop rebuild",
+      "Three non-negotiable metrics and dashboard tracking",
+      "Cascade training and stakeholder alignment",
+      "Service reliability and structural improvement"
+    ],
     context: "A third-party logistics provider was failing to meet core operational requirements at a high-throughput distribution center supporting two business units.",
     operationRepresented: "The site ran daily truckload volume across inbound/outbound flows and managed material on-hand inventory with tight accuracy expectations. The site was under pressure from seasonal demand. Execution instability meant on-time shipping was inconsistent, and backlogs fluctuated and reappeared despite effort. Deteriorating performance drove large adjustments. Operational teams lacked a single, shared control mechanism; reporting had been replaced by diffuse data.",
     ambiguity: "Performance issues were visible but ungoverned. KPIs lacked clear ownership. Data was diffuse and reviewed after the fact; root causes were debated without closure. It was unclear whether structural capacity or execution was the issue; there was no way to separate system issues from execution failures.",
@@ -94,6 +124,12 @@ export const caseStudies = [
     slug: "customer-policy-enforcement",
     category: "Operational Excellence & Control Systems",
     title: "Customer Policy Enforcement as a Commercial Operations Control System",
+    responsibility: [
+      "Closed-loop system design and flow formalization",
+      "Metrics translation into daily execution",
+      "Cross-functional review and pattern emergence",
+      "Enforcement integration into standard operating procedure"
+    ],
     context: "Noncompliance across ordering practices, receiving behavior, appointment adherence, OS&D claims, and exception handling was driving persistent service disruption and margin leakage.",
     operationRepresented: "The operating environment included fragmented issue ownership, inconsistent resolution outcomes, high administrative burden, and unrecoverable financial exposure. Recurring failures were tied to the same root causes. Control did not exist at the organizational level; issues were addressed reactively rather than governed.",
     ambiguity: "Challenges were not defined by rules but by enforcing them without breaking relationships. Key unknowns: how to assign accountability, quantify impact, and simulate shift in new paths. Supply and the broader team had to align.",
