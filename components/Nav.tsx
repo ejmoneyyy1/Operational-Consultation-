@@ -21,7 +21,7 @@ export function Nav() {
             {/* Logo - centered on mobile, left on desktop */}
             <Link href="/" className="flex items-center flex-1 md:flex-initial justify-center md:justify-start min-w-0">
               <img
-                src="/images/logo.svg"
+                src="/images/logo.svg?v=2"
                 alt="The Earth Atelier"
                 className="h-8 md:h-10 w-auto"
               />
