@@ -34,8 +34,18 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
+      {/* Intro + confidentiality note */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+        <p className="text-brand-soil/90 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
+          A selection of projects that demonstrate forming structure and clarity from ambiguity.
+        </p>
+        <p className="text-brand-soil/60 text-sm md:text-base max-w-3xl leading-relaxed italic">
+          Note: To maintain client confidentiality, specific company names, proprietary data, and internal metrics have been abstracted or generalized. These narratives focus on the structural challenges and the logic of the operating systems implemented.
+        </p>
+      </div>
+
       {/* Bucketed case studies */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32 pt-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
         {buckets.map(({ index, category, description, studies }) => (
           <section key={category} className="mb-20 md:mb-28">
             <h2 className="text-2xl md:text-3xl font-bold text-brand-soil mb-3">
