@@ -60,7 +60,6 @@ export default function CaseStudiesPage() {
                 const titleMain = study.title.endsWith(publicVersionSuffix)
                   ? study.title.slice(0, -publicVersionSuffix.length)
                   : study.title;
-                const showSuffix = study.title.endsWith(publicVersionSuffix);
                 return (
                   <Link
                     key={study.slug}
@@ -75,11 +74,6 @@ export default function CaseStudiesPage() {
                     <h3 className="font-semibold text-brand-soil text-[15px] leading-snug group-hover:text-brand-wood transition-colors line-clamp-3">
                       {titleMain}
                     </h3>
-                    {showSuffix && (
-                      <p className="mt-2 text-brand-soil/60 text-xs leading-relaxed">
-                        (Public version — confidentiality-safe draft)
-                      </p>
-                    )}
                   </Link>
                 );
               })}
