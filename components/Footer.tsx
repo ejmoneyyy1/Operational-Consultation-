@@ -10,7 +10,7 @@ export function Footer() {
         {/* Logo + Copyright + Contact - centered on mobile */}
         <div className="flex flex-col items-center md:items-start">
           <img
-            src="/images/logo.svg?v=2"
+            src="/images/logo.svg?v=3"
             alt="The Earth Atelier"
             className="h-8 md:h-10 w-auto mb-6 md:mb-10"
           />
