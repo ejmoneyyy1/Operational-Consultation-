@@ -10,8 +10,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 
 const sectionClassFirst = "mb-0";
 const sectionClassRest = "mt-12 mb-0";
-const headingClass = "font-bold text-brand-soil mb-1.5 text-xs uppercase tracking-widest";
-const paragraphClass = "text-brand-soil/80 leading-relaxed text-sm md:text-base whitespace-pre-wrap max-w-3xl";
+const headingClass = "font-bold text-brand-soil mb-2 text-sm md:text-base uppercase tracking-widest";
+const paragraphClass = "text-brand-soil/80 leading-relaxed text-base md:text-lg whitespace-pre-wrap max-w-3xl";
 
 export default function CaseStudyTemplate({ params }: { params: { slug: string } }) {
   const study = caseStudies.find(s => s.slug === params.slug);
@@ -97,7 +97,7 @@ export default function CaseStudyTemplate({ params }: { params: { slug: string }
 
       <div className="max-w-6xl mx-auto px-4 mt-24">
         <div className="py-8 border-t border-brand-soil/20 text-center">
-          <p className="italic text-brand-soil/60 text-sm">
+          <p className="italic text-brand-soil/60 text-base">
             Confidentiality-safe version: Details generalized for public viewing
           </p>
         </div>
